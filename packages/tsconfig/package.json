@@ -1,0 +1,16 @@
+{
+    "name": "@nixysoftware/tsconfig",
+    "description": "TypeScript configuration.",
+    "version": "0.1.0",
+    "author": "Nixy <info@nixy.software>",
+    "repository": "github:NixySoftware/config",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        "./*": "./src/*.json"
+    },
+    "files": [
+        "src"
+    ],
+    "scripts": {}
+}

@@ -1,0 +1,32 @@
+{
+    "name": "@nixysoftware/config",
+    "description": "Configuration files.",
+    "author": "Nixy <info@nixy.software>",
+    "repository": "github:NixySoftware/config",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "turbo build",
+        "check:licenses": "license-checker-rseidelsohn --summary --excludePackagesStartingWith '@nixysoftware/' --onlyAllow '0BSD;Apache-2.0;BSD-2-Clause;BSD-3-Clause;BSD*;BlueOak-1.0.0;CC0-1.0;CC-BY-3.0;CC-BY-4.0;ISC;MIT;MPL-2.0;Python-2.0;Unlicense'",
+        "dev": "turbo dev",
+        "lint": "turbo lint",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^20.0.0",
+        "@commitlint/config-conventional": "^20.0.0",
+        "@trivago/prettier-plugin-sort-imports": "^6.0.0",
+        "lerna": "^9.0.3",
+        "license-checker-rseidelsohn": "^4.4.2",
+        "prettier": "^3.4.2",
+        "prettier-plugin-sort-json": "^4.1.1",
+        "turbo": "^2.5.8"
+    },
+    "engines": {
+        "node": ">=22"
+    },
+    "packageManager": "npm@11.7.0"
+}

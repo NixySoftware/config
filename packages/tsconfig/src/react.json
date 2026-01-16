@@ -1,0 +1,9 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "jsx": "react-jsx",
+        "lib": ["ESNext", "DOM", "DOM.Iterable"]
+    },
+    "extends": "./base.json"
+}

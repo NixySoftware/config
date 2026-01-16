@@ -1,0 +1,29 @@
+{
+    "name": "@nixysoftware/eslint-config-next",
+    "description": "ESLint configuration for Next.js.",
+    "version": "0.1.0",
+    "author": "Nixy <info@nixy.software>",
+    "repository": "github:NixySoftware/config",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w"
+    },
+    "dependencies": {
+        "@next/eslint-plugin-next": "^16.1.2"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.2"
+    },
+    "peerDependencies": {
+        "eslint": "^9.15.0"
+    }
+}

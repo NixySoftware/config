@@ -1,0 +1,33 @@
+{
+    "name": "@nixysoftware/eslint-config-react",
+    "description": "ESLint configuration for React.",
+    "version": "0.1.0",
+    "author": "Nixy <info@nixy.software>",
+    "repository": "github:NixySoftware/config",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w"
+    },
+    "dependencies": {
+        "eslint-plugin-jsx-a11y": "^6.10.2",
+        "eslint-plugin-react": "^7.37.2",
+        "eslint-plugin-react-hooks": "^7.0.0",
+        "eslint-plugin-testing-library": "^7.13.3"
+    },
+    "devDependencies": {
+        "@types/eslint-plugin-jsx-a11y": "^6.10.0",
+        "typescript": "^5.7.2"
+    },
+    "peerDependencies": {
+        "eslint": "^9.15.0"
+    }
+}
