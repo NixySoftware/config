@@ -30,5 +30,17 @@ jobs:
             - name: Build
               run: npm run build
 
-            - name: Publish
-              run: npm publish --access public --workspaces
+            - name: Publish to npm
+              run: npm publish --access public --registry https://registry.npmjs.org --workspaces
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 'lts/*'
+                  cache: 'npm'
+                  registry-url: 'https://npm.pkg.github.com'
+
+            - name: Publish to GitHub Packages
+              run: npm publish --access public --registry https://npm.pkg.github.com --workspaces
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
