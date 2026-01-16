@@ -1,7 +1,7 @@
 {
     "name": "@nixysoftware/eslint-config-react-router",
     "description": "ESLint configuration for React Router.",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "author": "Nixy <info@nixy.software>",
     "repository": "github:NixySoftware/config",
     "license": "MIT",
@@ -18,7 +18,7 @@
         "dev": "tsc -w"
     },
     "dependencies": {
-        "@nixysoftware/eslint-config-react": "^0.3.0"
+        "@nixysoftware/eslint-config-react": "^1.0.0"
     },
     "devDependencies": {
         "typescript": "^5.7.2"
