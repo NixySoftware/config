@@ -1,7 +1,7 @@
 {
     "name": "@nixysoftware/eslint-config-react",
     "description": "ESLint configuration for React.",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "author": "Nixy <info@nixy.software>",
     "repository": "github:NixySoftware/config",
     "license": "MIT",
