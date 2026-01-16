@@ -18,7 +18,8 @@
         "dev": "tsc -w"
     },
     "dependencies": {
-        "@next/eslint-plugin-next": "^16.1.2"
+        "@next/eslint-plugin-next": "^16.1.2",
+        "@nixysoftware/eslint-config-react": "^0.2.0"
     },
     "devDependencies": {
         "typescript": "^5.7.2"
