@@ -1,7 +1,7 @@
 {
     "name": "@nixysoftware/eslint-config-next",
     "description": "ESLint configuration for Next.js.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Nixy <info@nixy.software>",
     "repository": "github:NixySoftware/config",
     "license": "MIT",
