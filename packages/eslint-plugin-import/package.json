@@ -1,0 +1,27 @@
+{
+    "name": "@nixysoftware/eslint-plugin-import",
+    "description": "ESLint plugin for import rules.",
+    "version": "1.0.2",
+    "author": "Nixy <info@nixy.software>",
+    "repository": "github:NixySoftware/config",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w"
+    },
+    "devDependencies": {
+        "@nixysoftware/tsconfig": "^1.0.2",
+        "typescript": "^5.7.2"
+    },
+    "peerDependencies": {
+        "eslint": "^9.15.0"
+    }
+}
