@@ -1,15 +1,15 @@
 import fs from 'node:fs';
 
-import type { RuleDefinition, RuleDefinitionTypeOptions } from '@eslint/core';
-import type { ESLint } from 'eslint';
+import type { ConfigObject, Plugin, RuleDefinition, RuleDefinitionTypeOptions } from '@eslint/core';
 
 const pkg = JSON.parse(fs.readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
+const namespace = pkg.name.replace('eslint-plugin-', '');
 
-const plugin: ESLint.Plugin = {
+const plugin: Plugin = {
     meta: {
         name: pkg.name,
         version: pkg.version,
-        namespace: pkg.name.replace('eslint-plugin-', ''),
+        namespace,
     },
     rules: {
         'no-relative-import': {
@@ -64,4 +64,26 @@ const plugin: ESLint.Plugin = {
     },
 };
 
-export default plugin;
+if (plugin.configs === undefined) {
+    plugin.configs = {};
+}
+
+plugin.configs.recommended = {
+    plugins: {
+        [namespace]: plugin,
+    },
+    rules: {
+        [`${namespace}/no-relative-import`]: [
+            'error',
+            {
+                depth: 0,
+            },
+        ],
+    },
+} satisfies ConfigObject;
+
+export default plugin as Omit<Plugin, 'configs'> & {
+    configs: {
+        recommended: ConfigObject;
+    };
+};

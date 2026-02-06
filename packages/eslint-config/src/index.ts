@@ -1,4 +1,5 @@
 import eslint from '@eslint/js';
+import nixyImport from '@nixysoftware/eslint-plugin-import';
 import eslintImport from 'eslint-plugin-import';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
@@ -81,4 +82,7 @@ export default defineConfig(
             'import/no-unresolved': 'off',
         },
     },
+
+    // Nixy import
+    nixyImport.configs.recommended,
 );
