@@ -1,7 +1,7 @@
 {
     "name": "@nixysoftware/eslint-plugin-import",
     "description": "ESLint plugin for import rules.",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": "Nixy <info@nixy.software>",
     "repository": "github:NixySoftware/config",
     "license": "MIT",
@@ -26,7 +26,7 @@
         "@eslint/core": "^1.1.0"
     },
     "devDependencies": {
-        "@nixysoftware/tsconfig": "^1.0.4",
+        "@nixysoftware/tsconfig": "^1.0.5",
         "typescript": "^5.7.2"
     },
     "peerDependencies": {

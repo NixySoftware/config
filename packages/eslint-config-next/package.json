@@ -1,7 +1,7 @@
 {
     "name": "@nixysoftware/eslint-config-next",
     "description": "ESLint configuration for Next.js.",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": "Nixy <info@nixy.software>",
     "repository": "github:NixySoftware/config",
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "@next/eslint-plugin-next": "^16.1.2",
-        "@nixysoftware/eslint-config-react": "^1.0.4"
+        "@nixysoftware/eslint-config-react": "^1.0.5"
     },
     "devDependencies": {
         "typescript": "^5.7.2"
