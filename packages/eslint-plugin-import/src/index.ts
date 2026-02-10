@@ -42,7 +42,7 @@ const plugin: Plugin = {
 
                         let path = node.source.value;
                         while (path.startsWith('../')) {
-                            pathDepth++;
+                            pathDepth = Math.max(0, pathDepth) + 1;
                             path = path.substring(3);
                         }
 
