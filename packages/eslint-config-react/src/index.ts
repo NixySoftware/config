@@ -38,8 +38,12 @@ export default defineConfig(
     },
 
     // Testing Library
-    testingLibrary.configs['flat/react'],
     {
+        files: ['**/__tests__/**/*.{js,jsx,ts,tsx}', '**/*.test.{js,jsx,ts,tsx}'],
+        ...testingLibrary.configs['flat/react'],
+    },
+    {
+        files: ['**/__tests__/**/*.{js,jsx,ts,tsx}', '**/*.test.{js,jsx,ts,tsx}'],
         rules: {
             'testing-library/prefer-explicit-assert': 'error',
             'testing-library/prefer-user-event': 'error',
