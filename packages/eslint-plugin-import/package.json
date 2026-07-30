@@ -28,7 +28,7 @@
     "devDependencies": {
         "@nixysoftware/tsconfig": "^1.1.0",
         "@types/node": "^25.5.2",
-        "typescript": "^6.0.0"
+        "typescript": "^7.0.0"
     },
     "peerDependencies": {
         "eslint": "^9.15.0"
