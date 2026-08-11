@@ -22,7 +22,7 @@
         "@nixysoftware/eslint-config-react": "^1.1.0"
     },
     "devDependencies": {
-        "typescript": "^6.0.0"
+        "typescript": "^7.0.0"
     },
     "peerDependencies": {
         "eslint": "^9.15.0"
