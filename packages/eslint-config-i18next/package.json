@@ -18,12 +18,12 @@
         "dev": "tsc -w"
     },
     "dependencies": {
-        "eslint-plugin-i18next": "^6.1.1"
+        "eslint-plugin-i18next": "^6.1.5"
     },
     "devDependencies": {
         "typescript": "^7.0.0"
     },
     "peerDependencies": {
-        "eslint": "^9.15.0"
+        "eslint": "^10.0.0"
     }
 }

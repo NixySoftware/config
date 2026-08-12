@@ -18,13 +18,13 @@
         "dev": "tsc -w"
     },
     "dependencies": {
-        "@next/eslint-plugin-next": "^16.1.2",
+        "@next/eslint-plugin-next": "^16.3.0",
         "@nixysoftware/eslint-config-react": "^1.1.0"
     },
     "devDependencies": {
         "typescript": "^7.0.0"
     },
     "peerDependencies": {
-        "eslint": "^9.15.0"
+        "eslint": "^10.0.0"
     }
 }

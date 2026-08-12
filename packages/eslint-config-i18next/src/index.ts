@@ -3,7 +3,6 @@ import { defineConfig } from 'eslint/config';
 
 export default defineConfig(
     /// i18next
-    // @ts-expect-error: `ConfigData<RulesRecord>` is not assignable to type `ConfigWithExtends`.
     i18next.configs['flat/recommended'],
 
     // Disable some rules for tests
